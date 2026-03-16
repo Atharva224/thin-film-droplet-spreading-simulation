@@ -1,6 +1,3 @@
-# thin-film-droplet-spreading-simulation
-Finite element simulation of droplet spreading on a rotating disk using thin film lubrication equations.
-
 # Droplet Spreading on a Rotating Disk
 
 This project studies the spreading of a viscous droplet on a rotating disk using a thin-film lubrication model derived from the Navier–Stokes equations. The goal is to simulate the evolution of the droplet height profile and investigate the stability and physical consistency of the numerical scheme.

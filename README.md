@@ -1,8 +1,8 @@
 # Droplet Spreading on a Rotating Disk
 
-This project studies the spreading of a viscous droplet on a rotating disk using a thin-film lubrication model derived from the Navier–Stokes equations. The goal is to simulate the time evolution of the droplet height profile and analyze the stability of the numerical scheme.
+This project studies the spreading of a viscous droplet on a rotating disk using a thin-film lubrication model derived from the Navier–Stokes equations. The objective is to simulate the time evolution of the droplet height profile and analyze the stability and physical consistency of the numerical scheme.
 
-The model captures the physics of thin liquid films and is commonly used in lubrication theory and fluid mechanics.
+Thin-film equations are widely used in lubrication theory, coating flows, and droplet spreading problems.
 
 ---
 
@@ -17,13 +17,11 @@ where
 P = ((r u_r)_r) / r  
 M(u) = u² (u + 3λ)
 
-This model captures important physical effects such as
+This model captures
 
 • capillary driven spreading  
 • slip boundary conditions  
 • centrifugal forces due to disk rotation  
-
-Thin-film equations of this type arise in many engineering problems including coating flows, lubrication, and droplet spreading.
 
 ---
 
@@ -48,33 +46,33 @@ The numerical scheme follows the entropy-stable framework proposed by **Grün & 
 
 ## Droplet spreading simulation
 
-<video src="droplet_spreading.mp4" controls width="650"></video>
+![Droplet spreading](droplet_spreading.gif)
 
-This animation shows the evolution of the droplet height profile as the fluid spreads radially across the disk.
+Full resolution video:  
+[droplet_spreading.mp4](droplet_spreading.mp4)
 
 ---
 
 ## Droplet spreading with slip and centrifugal force
 
-<video src="droplet_spreading_with_slip.mp4" controls width="650"></video>
+![Droplet spreading with slip](droplet_spreading_with_slip.gif)
 
-This simulation includes additional physical effects such as slip boundary conditions and centrifugal forces, which modify the spreading behavior of the droplet.
+Full resolution video:  
+[droplet_spreading_with_slip.mp4](droplet_spreading_with_slip.mp4)
 
 ---
 
 # Repository Contents
 
-thinfilm_simulation.py  
-Python implementation of the thin-film numerical solver.
-
-droplet_spreading.mp4  
-Animation showing the droplet spreading over time.
-
-droplet_spreading_with_slip.mp4  
-Simulation including slip boundary conditions and centrifugal effects.
-
-Final_Report.pdf  
-Detailed derivation of the governing equations, numerical formulation, and simulation results.
+```
+thinfilm_simulation.py
+droplet_spreading.gif
+droplet_spreading.mp4
+droplet_spreading_with_slip.gif
+droplet_spreading_with_slip.mp4
+Final_Report.pdf
+README.md
+```
 
 ---
 
@@ -83,3 +81,9 @@ Detailed derivation of the governing equations, numerical formulation, and simul
 Atharva Sinnarkar  
 M.Sc Computational Engineering  
 FAU Erlangen–Nürnberg
+
+---
+
+# License
+
+MIT License

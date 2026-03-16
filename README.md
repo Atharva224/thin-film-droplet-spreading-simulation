@@ -1,8 +1,8 @@
 # Droplet Spreading on a Rotating Disk
 
-This project studies the spreading of a viscous droplet on a rotating disk using a thin-film lubrication model derived from the Navier–Stokes equations. The objective is to simulate the time evolution of the droplet height profile and analyze the stability and physical consistency of the numerical scheme.
+This project studies the spreading of a viscous droplet on a rotating disk using a thin-film lubrication model derived from the Navier–Stokes equations. The goal is to simulate the time evolution of the droplet height profile and analyze the stability and physical consistency of the numerical scheme.
 
-Thin-film equations are widely used in lubrication theory, coating flows, and droplet spreading problems.
+Thin-film equations of this type appear in lubrication theory, coating flows, and droplet spreading problems.
 
 ---
 
@@ -17,7 +17,7 @@ where
 P = ((r u_r)_r) / r  
 M(u) = u² (u + 3λ)
 
-This model captures
+This model captures important physical effects such as
 
 • capillary driven spreading  
 • slip boundary conditions  
@@ -51,6 +51,8 @@ The numerical scheme follows the entropy-stable framework proposed by **Grün & 
 Full resolution video:  
 [droplet_spreading.mp4](droplet_spreading.mp4)
 
+This animation shows the evolution of the droplet height profile as the fluid spreads radially across the disk.
+
 ---
 
 ## Droplet spreading with slip and centrifugal force
@@ -59,6 +61,8 @@ Full resolution video:
 
 Full resolution video:  
 [droplet_spreading_with_slip.mp4](droplet_spreading_with_slip.mp4)
+
+This simulation includes additional physical effects such as slip boundary conditions and centrifugal forces, which modify the spreading behavior of the droplet.
 
 ---
 
@@ -80,7 +84,9 @@ README.md
 
 Atharva Sinnarkar  
 M.Sc Computational Engineering  
-FAU Erlangen–Nürnberg
+FAU Erlangen–Nürnberg  
+
+GitHub: https://github.com/Atharva224
 
 ---
 
